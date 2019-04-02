@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <!-- 配置全局属性 -->
+    <settings>
+        <setting name="cacheEnabled" value="true"/>
+        <setting name="defaultStatementTimeout" value="3000"/>
+        <!-- 使用jdbc的getGeneratedKeys获取数据库自增主键值
+         我们insert一条记录时是不插入id的，id是通过自增进行赋值
+         插入完后想拿到这条插入记录的id时可以调用jdbc的getGeneratedKeys获得-->
+        <setting name="useGeneratedKeys" value="true"/>
+        <!-- 使用列别名替换列名， 默认：true
+        表中的列叫name，java实体类的属性叫title
+        这么写sql语句：select name as title from table
+        mybatis会自动帮我们识别出列name转换成了title-->
+        <setting name="useColumnLabel" value="true"/>
+        <!-- 开启驼峰命名转换：Table(create_time -> Entity(createTime))
+         mysql一般采用下划线命名，java一般采用驼峰命名法
+         开启后我们不用再去关心mysql和java实体类的命名转换，而由mybatis进行完成-->
+        <!-- 骆驼式命名法就是当变量名或函数名是由一个或多个单词连结在一起，而构成的唯一识别字时，
+        第一个单词以小写字母开始；从第二个单词开始以后的每个单词的首字母都采用大写字母，
+        例如：myFirstName、myLastName，这样的变量名看上去就像骆驼峰一样此起彼伏，故得名。-->
+        <setting name="mapUnderscoreToCamelCase" value="true"/>
+    </settings>
+    
+    <!--<mappers>-->
+        <!--&lt;!&ndash;<package name="com.nowcoder.wenda.dao"/>&ndash;&gt; &lt;!&ndash; 基于包扫描 &ndash;&gt;-->
+        <!--<mapper class="com.nowcoder.wenda.dao.QuestionDao"/>-->
+    <!--</mappers>-->
+
+</configuration>
