@@ -11,7 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 import org.springframework.stereotype.Service;
-import sun.java2d.pipe.hw.AccelDeviceEventNotifier;
+//import sun.java2d.pipe.hw.AccelDeviceEventNotifier;
 
 import java.awt.*;
 import java.util.ArrayList;

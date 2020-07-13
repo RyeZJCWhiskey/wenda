@@ -57,7 +57,7 @@ public class IndexController {
 //
 //    @RequestMapping(path = {"/redirect/{code}"}, method = RequestMethod.GET)
 //    public String redirect(@PathVariable("code") int code, HttpSession httpSession){
-//        httpSession.setAttribute("msg", "hahahjump from redirect");
+//        httpSession.setAttribute("msg", "jump from redirect");
 //        return "redirect:/";
 //    }
 

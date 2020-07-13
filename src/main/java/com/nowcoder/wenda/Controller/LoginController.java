@@ -4,7 +4,7 @@ import com.nowcoder.wenda.async.EventModel;
 import com.nowcoder.wenda.async.EventProducer;
 import com.nowcoder.wenda.async.EventType;
 import com.nowcoder.wenda.service.UserService;
-import com.sun.deploy.net.HttpResponse;
+//import com.sun.deploy.net.HttpResponse;
 import org.apache.commons.lang.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
